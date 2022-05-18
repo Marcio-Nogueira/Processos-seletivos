@@ -17,8 +17,43 @@
 
     <div id="container">
         <main id="main-doc">
-            <header id="main-header" class="item1">
-                <div>
+            <header id="main-header" class="grid-header">
+                <nav id="dropdown">
+                    <a class="droplink" onclick="dropdown()">&equiv;</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div>
+                            <a class="nav-link" href="">Change Language</a>
+                        </div>
+                        <div>
+                            <a class="nav-link" href="">Usuario</a>
+                        </div>
+                        <div>
+                            <a class="nav-link" href="">Apresentação</a>
+                        </div>
+
+                        <div>
+                            <a class="nav-link" href="">Comitês</a>
+                        </div>
+
+                        <div>
+                            <a class="nav-link" href="">Autores</a>
+                        </div>
+
+                        <div>
+                            <a class="nav-link" href="">Eixos temáticos</a>
+                        </div>
+
+                        <div>
+                            <a id="works" class="nav-link" href="">Trabalhos</a>
+                        </div>
+
+                        <div>
+                            <a class="nav-link" href="">Contato</a>
+                        </div>
+
+                    </div>
+                </nav>
+                <div id="header-information">
                     <p class="header-line">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
                     <h2 class="header-title">Anais do 13º Simpósio Latino Americano de Ciências de Alimentos</h2>
                     <p class="header-line">ISSN: 1234-5678</p>
@@ -36,30 +71,32 @@
                     </div>
                 </div>
             </header>
-            <div class="main-content item2">
+            <div class="main-content grid-title">
                 <h3 id="main-content-title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h3>
             </div>
-            <div id="buttons" class="main-content item3">
+            <div id="buttons" class="main-content grid-buttons">
                 <button id="download"><img id="img-download" src="./imagens/download..png">Download</button>
                 <button id="star"><img src="./imagens/star.png"></button>
                 <button id="doi"><img src="./imagens/doi.png"></button>
                 <a id="link">COMO CITAR ESSE TRABALHO?</a>
             </div>
-            <div class="main-content item4">
+            <div class="main-content grid-video">
                 <iframe width="783" height="439" src="https://www.youtube.com/embed/Zb9dZW5Uuec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div id="details" class="main-content item5">
+            <div id="details" class="main-content grid-details">
                 <header id="details-header">Detalhes</header>
                 <div id="details-content" class="bordered">
-                    <p>Tipo de apresentação:
-                        <bold>Pôster</bold>
-                    </p>
-                    <p>Eixo temático:
-                        <bold>Alimentação e saúde(AS)</bold>
-                    </p>
-                    <p>Palavras-chaves:
-                        <bold>Alimentos funcionais, alimentação escolar</bold>
-                    </p>
+                    <div>
+                        <p>Tipo de apresentação:
+                            <bold>Pôster</bold>
+                        </p>
+                        <p>Eixo temático:
+                            <bold>Alimentação e saúde(AS)</bold>
+                        </p>
+                        <p>Palavras-chaves:
+                            <bold>Alimentos funcionais, alimentação escolar</bold>
+                        </p>
+                    </div>
                     <div id="authors">
                         <h2>Autores</h2>
                         <p class="authors">Galileo Galilei</p>
@@ -78,7 +115,7 @@
 
             </div>
 
-            <section class="main-content item6" id="summary">
+            <section class="main-content grid-summary" id="summary">
                 <header id="summary-header">Resumo</header>
                 <div id="summary-content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida.
@@ -89,49 +126,10 @@
                 </div>
             </section>
 
-            <section class="main-content item7 discussions">
+            <section class="main-content grid-discussions discussions">
                 <header id="discussions">Discussões</header>
                 <div id="discussions-content">
-                    <!--Tela 3-->
-                    <!-- <header>Seu tópico foi enviado com sucesso! :D</header>
-                    <label>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</label>
-                    <a id="otherworks" class="discussions-link">Descubra outros trabalhos!</a>
-                    <hr id="h-line">
-                    <div id="create-topic-div">
-                        <button class="create-topic" id="create-new-topic" onclick="createTopic()"><div id="btn-pt1">&#43</div> <div id="btn-pt2">criar novo tópico</div></button>
-                    </div>
-                    <div>
-                        <div class="topic blur">
-                            <h2>Assunto da pergunta aparece aqui</h2>
-                            <label id="name">Carlos Henrique Santos</label>
-                            <p id="topic-text">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                        </div>
-                        <div id="topic-feedback">
-                            <div>
-                                <img src="./Imagens/seta.png">
-                                <h2>Aguardando feedback dos autores</h2>
-                                <a class="discussions-link">Editar Tópico</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!--Fim Tela 3-->
 
-                    <!--Tela 2-->
-                    <!-- <label id="suggestion-label">Tem uma sugestão? Compartilhe seu feedback com os autores!</label>
-                    <label id="subject" class="discussion-label">Assunto</label>
-                    <input type="text" id="subject-input" class="discussions-input" placeholder="Defina um tópico sucinto para notificar os autores!">
-                    <label id="content-label" class="discussion-label">Conteúdo</label>
-                    <textarea class="discussions-input" rows="8"></textarea>
-                    <div id="bottom-bar-container">
-                        <div id="bottom-bar">
-                            <img src="./Imagens/B.png">
-                            <img src="./Imagens/I.png">
-                        </div>
-                        <button type="button" id="send" onclick="send()">Enviar</button>
-                        <hr id="h-line">
-                    </div> -->
-
-                    <!--tela 1-->
                     <header>Compartilhe suas ideias ou dúvidas com os autores!</header>
                     <div>
                         <img id="icon1" src="./Imagens/icone1.png">
@@ -174,7 +172,7 @@
 
             </section>
 
-            <footer id="footer" class="main-content item8">
+            <footer id="footer" class="main-content grid-footer">
                 <div id="logo-galoa">
                     <img src="./Imagens/footer.png">
                 </div>
